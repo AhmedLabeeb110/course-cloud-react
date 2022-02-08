@@ -1,0 +1,17 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC4sWEffrvsfGxQgtLD3zp0_Zj0DQyl0Jk",
+  authDomain: "course-cloud-react.firebaseapp.com",
+  projectId: "course-cloud-react",
+  storageBucket: "course-cloud-react.appspot.com",
+  messagingSenderId: "588688052049",
+  appId: "1:588688052049:web:21c91247f5112ed8210d70"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
