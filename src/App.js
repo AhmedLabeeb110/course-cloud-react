@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Routes, Route, Link } from "react-router-dom";
-import LoginModal from "./Components/Common/LoginModal";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 
 import "../src/App.css";
 
@@ -10,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <LoginModal />
     </div>
   );
 }
