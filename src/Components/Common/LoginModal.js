@@ -1,11 +1,12 @@
 import React from 'react';
+import {FaTimes} from 'react-icons/fa';
 
-const LoginModal = () => {
+const LoginModal = ({children, handleClose}) => {
   return (
     <div className="modal-backdrop">
-      <div className="modal">
-       <h2>10% Off Coupon Code!!</h2>
-       <p>10% Off Coupon Code!!</p>
+      <div className="modal-text">
+        {children}
+        <FaTimes onClick={handleClose}/>
       </div>
     </div>
   );

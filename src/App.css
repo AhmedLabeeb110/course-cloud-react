@@ -1,28 +1,48 @@
-.TopNav-Bground{
-    background-color: #21252D !important;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+.TopNav-Bground {
+  background-color: #21252d !important;
 }
 
-.input-color{
-    background-color: #191C21 !important;
+.input-color {
+  background-color: #191c21 !important;
 }
 
-.navbar-toggler, .navbar-toggler-icon{
-    background-color: white !important;
+.navbar-toggler,
+.navbar-toggler-icon {
+  background-color: white !important;
 }
-
 
 .modal-backdrop {
-    position: fixed;
+  /* position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-  }
-  .modal {
-    padding: 30px;
-    max-width: 480px;
-    margin: 200px auto;
-    background: #fff;
-    border-radius: 10px;
-  }
+    height: 100%; */
+
+  /*#17191D*/
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-text {
+  padding: 30px;
+  max-width: 480px;
+  margin: 200px auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.Hero-Banner {
+  background-color: #0f0f0f;
+  width: 100%;
+  height: auto;
+}
+
+.banner-button{
+    width: 25%;
+}
+
+.banner-info{
+    color: #fff;
+    word-spacing: 1px;
+}

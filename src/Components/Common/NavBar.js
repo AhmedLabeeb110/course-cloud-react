@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Navbar,
   Nav,
@@ -7,20 +7,31 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
+import LoginModal from "./LoginModal";
+import { Routes, Route, NavLink } from "react-router-dom";
+
+
 import logo from "../../Assets/logo.png";
 
 const NavBar = () => {
+  const [showLogin, setLogin] = useState(false);
+
+  const handleClose = () => {
+    setLogin(false);
+  };
+
   return (
     <Navbar bg="light" expand="lg" className="TopNav-Bground">
       <Container fluid="xl">
-        <Navbar.Brand href="#">
-          {" "}
-          <img src={logo} alt="Logo" />{" "}
+        <Navbar.Brand>
+          <NavLink to='/'>
+            <img src={logo} alt="Logo" />
+            </NavLink>
         </Navbar.Brand>
         <Navbar.Toggle />
 
         <Navbar.Collapse>
-        <br />
+          <br />
           <Form>
             <FormControl
               type="search"
@@ -40,9 +51,18 @@ const NavBar = () => {
             <Nav.Link href="#action2" style={{ color: "white" }}>
               SUPPORT
             </Nav.Link>
-            <Button variant="warning">LOG IN</Button>
+            <Button variant="warning" onClick={setLogin}>
+              LOG IN
+            </Button>
           </Nav>
         </Navbar.Collapse>
+
+        {showLogin && (
+          <LoginModal handleClose={handleClose}>
+            <h2>10% Off Coupon Code!!</h2>
+            <p>10% Off Coupon Code!!</p>
+          </LoginModal>
+        )}
       </Container>
     </Navbar>
   );
