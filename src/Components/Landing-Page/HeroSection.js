@@ -21,13 +21,13 @@ const HeroSection = () => {
             <h1>IS ESSENTIAL TO GROWTH</h1>
             <p>All of CourseCloud.Free for 3 days.</p>
             <Button variant="warning" className="banner-button">
-              Warning
+              GET STARTED
             </Button>{" "}
             <p>
               <br />
               $15/month (billed annually)
               <br />
-              <span> Offer terms apply </span>
+              <span className="text-decoration-underline"> Offer terms apply </span>
             </p>
             <br />
             <Row>

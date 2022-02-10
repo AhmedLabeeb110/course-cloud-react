@@ -5,8 +5,8 @@ const LoginModal = ({children, handleClose}) => {
   return (
     <div className="modal-backdrop">
       <div className="modal-text">
+      <FaTimes onClick={handleClose} className=""/>
         {children}
-        <FaTimes onClick={handleClose}/>
       </div>
     </div>
   );
