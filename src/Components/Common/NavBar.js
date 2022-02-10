@@ -84,7 +84,7 @@ const NavBar = () => {
             </FloatingLabel>
             <Button className="w-100" id='LoginButton'>Log In</Button>
             <div className="needAccount mt-2 text-center">
-             <h6>Need an account?<span className="text-decoration-underline"> Sign up</span></h6>
+             <h6>Need an account?<span className="text-decoration-underline" onClick={() => setLogin(false)}> Sign up</span></h6>
               <br />
               <span className="text-decoration-underline">Forgot your password?</span>
               <br />
