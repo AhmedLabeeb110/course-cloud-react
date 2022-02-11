@@ -4,12 +4,14 @@ import "../src/App.css";
 
 import NavBar from "./Components/Common/NavBar";
 import HeroSection from "./Components/Landing-Page/HeroSection";
+import BecomeInstructor from "./Components/Landing-Page/BecomeInstructor";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <HeroSection />
+      <BecomeInstructor />
     </div>
   );
 }

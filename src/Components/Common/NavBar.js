@@ -7,10 +7,10 @@ import {
   FormControl,
   Button,
   FloatingLabel,
+  FormCheck,
 } from "react-bootstrap";
 import LoginModal from "./LoginModal";
 import { Routes, Route, NavLink } from "react-router-dom";
-
 
 import logo from "../../Assets/logo.png";
 import GoogleIcon from "../../Assets/GoogleIcon.png";
@@ -28,13 +28,13 @@ const NavBar = () => {
   };
 
   const handleClose3 = () => {
-    setchangeLogin(false)
+    setchangeLogin(false);
   };
 
   const handleCloseTwo = () => {
-    setchangeLogin(false)
+    setchangeLogin(false);
     setLogin(false);
-  }
+  };
 
   return (
     <Navbar bg="light" expand="lg" className="TopNav-Bground">
@@ -131,9 +131,66 @@ const NavBar = () => {
               </div>
             </Container>
             {changeLogin && (
-              <LoginModal handleClose={handleClose, handleCloseTwo}>
+              <LoginModal handleClose={(handleClose, handleCloseTwo)}>
                 <Container>
-                  <h4 className="text-center mb-3" onClick={handleClose3}>Log In</h4>
+                  <h4 className="text-center mb-3">Create Account</h4>
+                  <Button className="w-100 mb-3" id="google-button">
+                    {" "}
+                    <img src={GoogleIcon} alt="" /> Log In With Google
+                  </Button>
+                  <Button className="w-100" id="fb-button">
+                    {" "}
+                    <img src={fbIcon} alt="" /> Log In With facebook
+                  </Button>
+                  <p className="text-center mt-2">
+                    {" "}
+                    <span className="oneLine"></span> or{" "}
+                    <span className="oneLine"></span>
+                  </p>
+                  <FloatingLabel
+                    controlId="floatingInput"
+                    label="Email address"
+                    className="mb-3"
+                  >
+                    <Form.Control type="email" placeholder="name@example.com" />
+                  </FloatingLabel>
+                  <FloatingLabel
+                    controlId="floatingPassword"
+                    label="Password"
+                    className="mb-3"
+                  >
+                    <Form.Control type="password" placeholder="Password" />
+                  </FloatingLabel>
+                  <div className="checkSubscribe mb-2 d-flex gap-1">
+                    <Form.Check aria-label="option 1" />
+                    <span className="checkText">
+                      Keep me up to date on class events and new releases
+                    </span>
+                  </div>
+                  <Button className="w-100" id="LoginButton">
+                    Create Account
+                  </Button>
+                  <div className="needAccount mt-2 text-center">
+                    <h6>
+                      Already have an account?
+                      <span
+                        className="text-decoration-underline"
+                        onClick={handleClose3}
+                      >
+                        {" "}
+                        Log in
+                      </span>
+                    </h6>
+                    <br />
+                    <br />
+                    <span>
+                      By signing up or creating an account, you agree to our
+                    </span>
+                    <br />
+                    <span className="text-decoration-underline">
+                      Privacy Policy and Terms od Service.
+                    </span>
+                  </div>
                 </Container>
               </LoginModal>
             )}

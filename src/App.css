@@ -70,3 +70,15 @@
   border-radius: 55%;
   background: #F8F8F8;
 }
+
+.checkSubscribe .checkText{
+  color: #494949;
+  font-size: 15px;
+  display: block;
+}
+
+.group-images{
+  background-color: #191C23;
+  width: 100%;
+  color: white;
+}
