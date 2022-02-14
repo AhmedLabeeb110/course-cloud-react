@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import {
   Navbar,
   Nav,
@@ -15,6 +15,8 @@ import { Routes, Route, NavLink } from "react-router-dom";
 import logo from "../../Assets/logo.png";
 import GoogleIcon from "../../Assets/GoogleIcon.png";
 import fbIcon from "../../Assets/fbIcon.png";
+
+import { signUp, login, useAuth, logout } from "../../FirebaseAuth/Firebase";
 
 const NavBar = () => {
   const [showLogin, setLogin] = useState(false);
@@ -35,6 +37,34 @@ const NavBar = () => {
     setchangeLogin(false);
     setLogin(false);
   };
+
+  //Firebase
+  const currentUser = useAuth();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+
+  async function handleSignup() {
+    try {
+      await signUp(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      alert("Error!");
+    }
+  }
+  async function handleLogin() {
+    try {
+      await login(emailRef.current.value, passwordRef.current.value);
+    } catch {
+      alert("Error!");
+    }
+  }
+
+  async function handleLogout() {
+    try {
+      await logout();
+    } catch {
+      alert("Error!");
+    }
+  }
 
   return (
     <Navbar bg="light" expand="lg" className="TopNav-Bground">
@@ -67,6 +97,11 @@ const NavBar = () => {
             <Nav.Link href="#action2" style={{ color: "white" }}>
               SUPPORT
             </Nav.Link>
+            <Nav.Link href="#action2" style={{ color: "white" }}>
+              <div className="userData">
+                {currentUser?.email}
+              </div>
+            </Nav.Link>
             <Button variant="warning" onClick={handleOpen}>
               LOG IN
             </Button>
@@ -95,16 +130,16 @@ const NavBar = () => {
                 label="Email address"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="name@example.com" />
+                <Form.Control type="email" placeholder="name@example.com" ref={emailRef}/>
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingPassword"
                 label="Password"
                 className="mb-3"
               >
-                <Form.Control type="password" placeholder="Password" />
+                <Form.Control type="password" placeholder="Password" ref={passwordRef} />
               </FloatingLabel>
-              <Button className="w-100" id="LoginButton">
+              <Button className="w-100" id="LoginButton" onClick={handleLogin}>
                 Log In
               </Button>
               <div className="needAccount mt-2 text-center">
@@ -120,7 +155,7 @@ const NavBar = () => {
                 </h6>
                 <br />
                 <span className="text-decoration-underline">
-                  Forgot your password?
+                  Forgot your password? or <span onClick={handleLogout}>Logout</span>
                 </span>
                 <br />
                 <span>By logging in, you agree to our</span>
@@ -152,14 +187,22 @@ const NavBar = () => {
                     label="Email address"
                     className="mb-3"
                   >
-                    <Form.Control type="email" placeholder="name@example.com" />
+                    <Form.Control
+                      type="email"
+                      placeholder="name@example.com"
+                      ref={emailRef}
+                    />
                   </FloatingLabel>
                   <FloatingLabel
                     controlId="floatingPassword"
                     label="Password"
                     className="mb-3"
                   >
-                    <Form.Control type="password" placeholder="Password" />
+                    <Form.Control
+                      type="password"
+                      placeholder="Password"
+                      ref={passwordRef}
+                    />
                   </FloatingLabel>
                   <div className="checkSubscribe mb-2 d-flex gap-1">
                     <Form.Check aria-label="option 1" />
@@ -167,7 +210,11 @@ const NavBar = () => {
                       Keep me up to date on class events and new releases
                     </span>
                   </div>
-                  <Button className="w-100" id="LoginButton">
+                  <Button
+                    className="w-100"
+                    id="LoginButton"
+                    onClick={handleSignup}
+                  >
                     Create Account
                   </Button>
                   <div className="needAccount mt-2 text-center">
