@@ -56,21 +56,22 @@ const ExploreCourses = () => {
         <br />
 
         <Row>
-          <Col  >
-            {courses.map((course) => (
-              <Card className="card-design" key={course.id}>
-                <Card.Img variant="top" src={course.img} />
-                <Card.Body>
-                  <Card.Text>{course.category}</Card.Text>
-                  <Card.Text>£{course.price}</Card.Text>
-                  <Card.Title>{course.title}</Card.Title>
-                  <Card.Text>{course.title}</Card.Text>
-                  <Button variant="primary">ADD TO CART</Button>
-                  <Card.Text>{course.instructor}</Card.Text>
-                </Card.Body>
-              </Card>
-            ))}
-          </Col>
+          {courses.map((course) => (
+            <Col xs={12} sm={12} md={6} lg={3}>
+            <Card className="card-design w-100" key={course.id}>
+              <Card.Img variant="top" src={course.img} />
+              <Card.Body>
+                <Card.Text className="text-secondary">{course.category}</Card.Text>
+                <Card.Text>£{course.price}</Card.Text>
+                <Card.Title>{course.title}</Card.Title>
+                <Card.Text className="text-muted">
+                 {course.details}
+                </Card.Text>
+                <Button>ADD TO CART</Button>
+              </Card.Body>
+            </Card>
+            </Col>
+          ))}
         </Row>
       </Container>
     </div>
