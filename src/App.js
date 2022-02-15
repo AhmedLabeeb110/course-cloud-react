@@ -5,6 +5,7 @@ import "../src/App.css";
 import NavBar from "./Components/Common/NavBar";
 import HeroSection from "./Components/Landing-Page/HeroSection";
 import BecomeInstructor from "./Components/Landing-Page/BecomeInstructor";
+import ExploreCourses from "./Components/Landing-Page/ExploreCourses";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <HeroSection />
       <BecomeInstructor />
+      <ExploreCourses />
     </div>
   );
 }

@@ -82,3 +82,27 @@
   width: 100%;
   color: white;
 }
+
+.instructor-button{
+  background-color: #5193F6 !important;
+  border: 0 !important;
+}
+.instructor-button:hover{
+  background-color: #555961 !important;
+}
+
+.explore-courses{
+  background-color: #0f0f0f;
+  width: 100%;
+  color: white;
+}
+
+.explore-nav-items:hover{
+  text-decoration: underline;
+}
+
+.card-design{
+  width: 18rem;
+  color: white !important;
+  background-color: #21252D;
+}

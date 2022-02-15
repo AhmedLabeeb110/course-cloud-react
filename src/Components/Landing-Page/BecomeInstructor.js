@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 
 import GroupOne from "../../Assets/GroupOne.png";
 import GroupTwo from "../../Assets/GroupTwo.png";
@@ -16,13 +16,24 @@ const BecomeInstructor = () => {
               className="col-lg-6 col-md-6 col-sm-12"
             />
             <div className="col-lg-6 col-md-6 col-sm-12 mt-5 ">
-              <h3> Become an Instructor - Earn by Teaching Online at Course Cloud </h3>
+              <h3>
+                {" "}
+                Become an Instructor - Earn by Teaching Online at Course Cloud{" "}
+              </h3>
               <br />
-              <p>Watch thousands of lessons from the best as they share their stories, skills, shortcuts, failures, and successes.</p>
+              <p>
+                Watch thousands of lessons from the best as they share their
+                stories, skills, shortcuts, failures, and successes.
+              </p>
+              <br />
+              <Button className="p-3 instructor-button">
+                BECOME A INSTRUCTOR
+              </Button>
             </div>
           </Row>
+          <br />
           <Row>
-            <img src={GroupOne} alt="GroupOne" className="col-sm-12" />
+              <img src={GroupOne} alt="GroupOne" />
           </Row>
         </Col>
       </Container>
