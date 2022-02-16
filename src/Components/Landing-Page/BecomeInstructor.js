@@ -4,6 +4,9 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import GroupOne from "../../Assets/GroupOne.png";
 import GroupTwo from "../../Assets/GroupTwo.png";
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 const BecomeInstructor = () => {
   return (
     <div className="group-images p-5">

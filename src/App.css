@@ -107,6 +107,17 @@
   background-color: #21252D;
 }
 
-.countdown{
-  color: #0f0f0f;
+.countdown-box{
+  color: #fff;
+  background-color: #21252D;
+}
+
+.card-design-two{
+  width: 18rem;
+  background-color: #15181E;
+}
+
+.Featured-Instructors{
+  background-color: #0F0F0F;
+  color: #fff;
 }

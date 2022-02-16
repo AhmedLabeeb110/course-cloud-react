@@ -10,8 +10,6 @@ const ExploreCourses = () => {
       .then((data) => setCourses(data));
   }, []);
 
-  console.log(courses);
-
   return (
     <div className="explore-courses p-5">
       <Container>
