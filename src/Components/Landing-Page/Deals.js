@@ -30,8 +30,6 @@ const Deals = ({ countdownTimestampMs }) => {
       .then((card) => setCards(card));
   }, []);
 
-  console.log(cards);
-
   return (
     <div className="countdown-box p-5">
       <Container className="text-center">
@@ -41,14 +39,24 @@ const Deals = ({ countdownTimestampMs }) => {
           faucibus ut eget nec tempor.{" "}
         </p>
         {/*d-flex justify-content-evenly text-center align-items-center border*/}
-        <span>{remainingTime.days}</span>
-        <span>days </span>
-        <span className="two-numbers">{remainingTime.hours}</span>
-        <span>hours </span>
-        <span className="two-numbers">{remainingTime.minutes}</span>
-        <span>minutes </span>
-        <span className="two-numbers">{remainingTime.seconds}</span>
-        <span>seconds </span>
+        <div className="d-flex justify-content-center bg-success">
+          <div className="p-4 ">
+            <div>{remainingTime.days}</div>
+            <div>days </div>
+          </div>
+          <div className="p-4">
+            <div className="two-numbers">{remainingTime.hours}</div>
+            <div>hours </div>
+          </div>
+          <div className="p-4">
+            <div className="two-numbers">{remainingTime.minutes}</div>
+            <div>minutes </div>
+          </div>
+          <div className="p-4">
+            <div className="two-numbers">{remainingTime.seconds}</div>
+            <div>seconds </div>
+          </div>
+        </div>
       </Container>
       <br />
       <br />
