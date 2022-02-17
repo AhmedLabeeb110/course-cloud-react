@@ -47,8 +47,8 @@ export default class SimpleSlider extends Component {
           <br />
           <h3> Featured Instructors</h3>
           <br />
-          <Container>
-            <Slider {...settings} className="slider">
+
+            <Slider {...settings} className="slider mx-5" gap={10}>
               <div>
                 <img src={InstructorOne} />
                 <div>
@@ -83,7 +83,7 @@ export default class SimpleSlider extends Component {
               </div>
             </Slider>
           </Container>
-        </Container>
+
         <br />
       </div>
     );
