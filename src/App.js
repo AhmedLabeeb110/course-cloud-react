@@ -9,6 +9,7 @@ import ExploreCourses from "./Components/Landing-Page/ExploreCourses";
 import Deals from "./Components/Landing-Page/Deals";
 import FeaturedInstructors from "./Components/Landing-Page/FeaturedInstructors";
 import StudentComments from "./Components/Landing-Page/StudentComments";
+import RecentBlogs from "./Components/Landing-Page/RecentBlogs";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Deals countdownTimestampMs={1659983662000}/>
       <FeaturedInstructors/>
       <StudentComments/>
+      <RecentBlogs/>
     </div>
   );
 }

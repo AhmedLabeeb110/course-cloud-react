@@ -55,8 +55,8 @@ const ExploreCourses = () => {
 
         <Row>
           {courses.map((course) => (
-            <Col xs={12} sm={12} md={6} lg={3}>
-            <Card className="card-design w-100" key={course.id}>
+            <Col xs={12} sm={12} md={6} lg={3} key={course.id}>
+            <Card className="card-design w-100">
               <Card.Img variant="top" src={course.img} />
               <Card.Body>
                 <Card.Text className="text-secondary">{course.category}</Card.Text>

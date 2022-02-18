@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 
 const RecentBlogs = () => {
@@ -23,8 +23,8 @@ const RecentBlogs = () => {
                 </Card.Text>
               <Card.Text>£{card.price}</Card.Text>
             */}
-                <Card.Title>{card.title}</Card.Title>
-                <Card.Text className="text-muted">{card.details}</Card.Text>
+                <Card.Title>{blog.title}</Card.Title>
+                <Card.Text className="text-muted">{blog.details}</Card.Text>
                 <Button>ADD TO CART</Button>
               </Card.Body>
             </Card>

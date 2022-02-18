@@ -63,7 +63,7 @@ const Deals = ({ countdownTimestampMs }) => {
       <Container>
         <Row>
           {cards.map((card) => (
-            <Col xs={12} sm={12} md={6} lg={4}>
+            <Col xs={12} sm={12} md={6} lg={4} key={card.id}>
               <Card className="card-design-two w-100" key={card.id}>
                 <Card.Img variant="top" src={card.img} />
                 <Card.Body>
