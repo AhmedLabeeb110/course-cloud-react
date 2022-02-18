@@ -19,7 +19,7 @@ export default class SimpleSlider extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
             infinite: true,
             dots: true,
           },
