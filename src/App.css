@@ -97,6 +97,11 @@
   color: white;
 }
 
+.explore-nav-items{
+  color: white !important;
+  text-decoration-color: #ffc107 !important;
+}
+
 .explore-nav-items:hover{
   text-decoration: underline;
 }
@@ -134,4 +139,45 @@
 .recent-blogs{
   background-color: #0F0F0F;
   color: #fff;
+}
+
+.card-design .card-price{
+  color: #F65158;
+  font-weight: bold;
+}
+
+.time{
+  border: 2px solid #5193F6;
+  border-radius: 5px;
+  padding: 12px 12px 12px 12px;
+  background: #5193F6;
+  font-weight: bold;
+}
+
+.deal-cards{
+  background: #191C23 !important;
+}
+.deal-cards-button:hover{
+  background: #5193F6;
+  color: #fff;
+  border: 0;
+}
+
+.fetured-instructors{
+  background:#21252D;
+}
+
+.st-comments-texts{
+  background: #191C21;
+}
+
+.read-more:hover{
+  color: #fff;
+  background: #ffca2c;
+}
+
+@media(max-width: 920px) {
+  .comments-box{
+    display: none !important;
+  }
 }

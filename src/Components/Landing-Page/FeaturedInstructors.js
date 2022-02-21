@@ -25,15 +25,40 @@ export default class SimpleSlider extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 920,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 2,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
             initialSlide: 2,
           },
         },
         {
           breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 420,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,

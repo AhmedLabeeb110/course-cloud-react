@@ -8,7 +8,8 @@
     "level": "beginner",
     "img": "https://i.ibb.co/s9DK3xV/Rectangle-30.png",
     "videolink": "https://www.youtube.com/watch?v=AQ0ktXH3LfI&list=RDAQ0ktXH3LfI&start_radio=1",
-    "instructor": "John Smith"
+    "instructor": "John Smith",
+    "instructorImage": "../src/Assets/InstructorImage.png"
   },
   {
     "id": "2",
@@ -19,7 +20,8 @@
     "level": "beginner",
     "img": "https://i.ibb.co/s9DK3xV/Rectangle-30.png",
     "videolink": "https://www.youtube.com/watch?v=AQ0ktXH3LfI&list=RDAQ0ktXH3LfI&start_radio=1",
-    "instructor": "John Smith"
+    "instructor": "John Smith",
+    "instructorImage": "../src/Assets/InstructorImage.png"
   },
   {
     "id": "3",
@@ -30,7 +32,8 @@
     "level": "beginner",
     "img": "https://i.ibb.co/s9DK3xV/Rectangle-30.png",
     "videolink": "https://www.youtube.com/watch?v=AQ0ktXH3LfI&list=RDAQ0ktXH3LfI&start_radio=1",
-    "instructor": "John Smith"
+    "instructor": "John Smith",
+    "instructorImage": "../src/Assets/InstructorImage.png"
   },
   {
     "id": "4",
@@ -41,6 +44,7 @@
     "level": "beginner",
     "img": "https://i.ibb.co/s9DK3xV/Rectangle-30.png",
     "videolink": "https://www.youtube.com/watch?v=AQ0ktXH3LfI&list=RDAQ0ktXH3LfI&start_radio=1",
-    "instructor": "John Smith"
+    "instructor": "John Smith",
+    "instructorImage": "../src/Assets/InstructorImage.png"
   }
 ]

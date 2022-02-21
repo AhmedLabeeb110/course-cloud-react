@@ -24,15 +24,23 @@ export default class Responsive extends Component {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 768,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 2,
             initialSlide: 2,
           },
         },
         {
-          breakpoint: 480,
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            initialSlide: 1,
+          },
+        },
+        {
+          breakpoint: 500,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -48,7 +56,7 @@ export default class Responsive extends Component {
           <Container>
           <Slider {...settings}>
             <div className="d-flex align-items-center ms-5">
-              <div className="w-50 text-center">
+              <div className="w-50 text-center st-comments-texts p-5">
                 <p>
                   “I've learned a positively immeasurable amount of things from
                   Georgina Sims and Holly Tyler. It gave me this sense of
@@ -56,7 +64,7 @@ export default class Responsive extends Component {
                 </p>
                 <p>-John Coates, Content Writer, UK</p>
               </div>
-              <img src={MaskGroup} alt="MaskGroup" className="w-25" />
+              <img src={MaskGroup} alt="MaskGroup" className="w-25 ms-5" />
             </div>
             <div>
               <h3>2</h3>
