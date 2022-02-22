@@ -176,8 +176,21 @@
   background: #ffca2c;
 }
 
-@media(max-width: 920px) {
+.PlaystoreSection{
+  background: #191C23;
+  color: #fff;
+}
+
+.subsciption-section{
+  background: #21252C;
+  color: #fff;
+}
+
+@media(max-width: 992px) {
   .comments-box{
+    display: none;
+  }
+  .download{
     display: none !important;
   }
 }

@@ -10,6 +10,8 @@ import Deals from "./Components/Landing-Page/Deals";
 import FeaturedInstructors from "./Components/Landing-Page/FeaturedInstructors";
 import StudentComments from "./Components/Landing-Page/StudentComments";
 import RecentBlogs from "./Components/Landing-Page/RecentBlogs";
+import PlaystoreSection from "./Components/Landing-Page/PlaystoreSection";
+import Subscription from "./Components/Landing-Page/Subscription";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
       <FeaturedInstructors/>
       <StudentComments/>
       <RecentBlogs/>
+      <PlaystoreSection/>
+      <Subscription/>
     </div>
   );
 }
