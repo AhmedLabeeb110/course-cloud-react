@@ -128,6 +128,8 @@ const FAQSection = () => {
           </div>
         </div>
       </Container>
+      <br />
+      <br />
     </div>
   );
 };

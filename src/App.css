@@ -199,7 +199,12 @@
 .faqSection .accordion-body{
   background: #21252D ;
   color: #fff;
-} 
+}
+
+.footerMain{
+  background: #191C21 !important;
+  color: #fff;
+}
 
 @media(max-width: 992px) {
   .comments-box{

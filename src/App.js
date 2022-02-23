@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Link, NavLink } from "react-router-dom";
 import "../src/App.css";
+import bootstrap from 'bootstrap';
 
 import NavBar from "./Components/Common/NavBar";
 import HeroSection from "./Components/Landing-Page/HeroSection";
@@ -13,7 +14,7 @@ import RecentBlogs from "./Components/Landing-Page/RecentBlogs";
 import PlaystoreSection from "./Components/Landing-Page/PlaystoreSection";
 import Subscription from "./Components/Landing-Page/Subscription";
 import FAQSection from "./Components/Landing-Page/FAQSection";
-import bootstrap from 'bootstrap'
+import Footer from "./Components/Common/Footer";
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
       <PlaystoreSection/>
       <Subscription/>
       <FAQSection/>
+      <Footer/>
     </div>
   );
 }
