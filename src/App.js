@@ -12,6 +12,9 @@ import StudentComments from "./Components/Landing-Page/StudentComments";
 import RecentBlogs from "./Components/Landing-Page/RecentBlogs";
 import PlaystoreSection from "./Components/Landing-Page/PlaystoreSection";
 import Subscription from "./Components/Landing-Page/Subscription";
+import FAQSection from "./Components/Landing-Page/FAQSection";
+import bootstrap from 'bootstrap'
+
 
 function App() {
   return (
@@ -26,6 +29,7 @@ function App() {
       <RecentBlogs/>
       <PlaystoreSection/>
       <Subscription/>
+      <FAQSection/>
     </div>
   );
 }

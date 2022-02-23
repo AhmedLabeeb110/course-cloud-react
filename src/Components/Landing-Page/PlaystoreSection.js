@@ -19,7 +19,7 @@ const PlaystoreSection = () => {
           <Row>
             <br />
             <div className="col-lg-6 col-md-8 col-sm-12">
-            <h3 className='download-text'>Easy Access From Anywhere</h3>
+            <h3 className='download-text mt-5'>Easy Access From Anywhere</h3>
             <br />
             <p className='download-text'>
               Tincidunt eget lectus facilisis ut tincidunt. Tellus at diam
@@ -28,12 +28,12 @@ const PlaystoreSection = () => {
               ornare. Ultrices sapien ullamcorper tristique eleifend amet leo
               odio.
             </p>
-            <div>
-              <img src={GooglePlay} alt="" />
-              <img src={ApplePlay} alt="" />
+            <div className="download-app-button">
+              <img src={GooglePlay} alt="" className="mt-1" />
+              <img src={ApplePlay} alt="" className="mb-2 ms-3"/>
             </div>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-lg-end">
+            <div className="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-lg-end mb-5">
             <img src={AppleiPhone11Pro1} className='download'/>
             </div>
           </Row>

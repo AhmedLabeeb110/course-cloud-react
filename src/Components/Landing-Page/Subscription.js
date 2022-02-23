@@ -15,6 +15,8 @@ const Subscription = () => {
         </p>
         <Button variant="warning">GET STARTED</Button>
       </Container>
+      <br />
+      <br />
     </div>
   );
 };

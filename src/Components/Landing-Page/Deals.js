@@ -86,7 +86,7 @@ const Deals = ({ countdownTimestampMs }) => {
                   {course.category}
                 </Card.Text>
                 <img src={StarTwo} className="position-absolute end-0 bottom-100"/>
-                <Card.Text className="card-price position-absolute end-0 bottom-100 me-3 mb-4">{course.price}</Card.Text>
+                <Card.Text className="card-price position-absolute end-0 bottom-100 me-3 mb-4">£{course.price}</Card.Text>
                 <Card.Title>{course.title}</Card.Title>
                 <Card.Text className="text-muted">{course.details}</Card.Text>
                 <div className="d-flex">
