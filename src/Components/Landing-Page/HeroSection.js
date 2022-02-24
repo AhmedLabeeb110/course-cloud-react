@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="Hero-Banner">
       <br />
       <div className="hero-image">
-        <Container className="d-flex flex-row-reverse">
+        <Container className="d-flex flex-row-reverse py-5">
           <Col xs={0} sm={6} md={7} lg={5}>
             <Row>
               <img src={BannerFinal} alt="Banner IMG" />
