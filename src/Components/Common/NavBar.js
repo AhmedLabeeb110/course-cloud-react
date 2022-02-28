@@ -10,7 +10,7 @@ import {
   FormCheck,
 } from "react-bootstrap";
 import LoginModal from "./LoginModal";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import logo from "../../Assets/logo.png";
 import GoogleIcon from "../../Assets/GoogleIcon.png";

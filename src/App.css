@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
 
 .TopNav-Bground {
   background-color: #21252d !important;
@@ -15,8 +15,8 @@
 }
 
 .modal-backdrop {
-    width: 100%;
-    height: 100%; 
+  width: 100%;
+  height: 100%;
   /*#17191D*/
   background: rgba(0, 0, 0, 0.5);
 }
@@ -34,183 +34,193 @@
   /* height: auto; */
 }
 
-.banner-button{
-    width: 25%;
+.banner-button {
+  width: 25%;
 }
 
-.banner-info{
-    color: #fff;
-    word-spacing: 1px;
+.banner-info {
+  color: #fff;
+  word-spacing: 1px;
 }
 
-.needAccount{
-  font-size: 10.50px;
+.needAccount {
+  font-size: 10.5px;
   color: #494949;
 }
 
-#google-button{
-  background: #4688F1 !important;
+#google-button {
+  background: #4688f1 !important;
   border: #fff;
 }
 
-#fb-button{
-  background: #3E5C97;
+#fb-button {
+  background: #3e5c97;
   border: #fff;
 }
 
-#LoginButton{
-  background: #C63437 !important;
+#LoginButton {
+  background: #c63437 !important;
   border: #fff;
 }
 
-.text-start{
+.text-start {
   display: block;
   margin-left: auto;
-  border: 1px solid #F8F8F8;
+  border: 1px solid #f8f8f8;
   border-radius: 55%;
-  background: #F8F8F8;
+  background: #f8f8f8;
 }
 
-.checkSubscribe .checkText{
+.checkSubscribe .checkText {
   color: #494949;
   font-size: 15px;
   display: block;
 }
 
-.group-images{
-  background-color: #191C23;
+.group-images {
+  background-color: #191c23;
   width: 100%;
   color: white;
 }
 
-.instructor-button{
-  background-color: #5193F6 !important;
+.instructor-button {
+  background-color: #5193f6 !important;
   border: 0 !important;
 }
-.instructor-button:hover{
+.instructor-button:hover {
   background-color: #555961 !important;
 }
 
-.explore-courses{
+.explore-courses {
   background-color: #0f0f0f;
   width: 100%;
   color: white;
 }
 
-.explore-nav-items{
+.explore-nav-items {
   color: white !important;
   text-decoration-color: #ffc107 !important;
 }
 
-.explore-nav-items:hover{
+.explore-nav-items:hover {
   text-decoration: underline;
 }
 
-.card-design{
+.card-design {
   width: 18rem;
   color: white !important;
-  background-color: #21252D;
+  background-color: #21252d;
 }
 
-.countdown-box{
+.countdown-box {
   color: #fff;
-  background-color: #21252D;
+  background-color: #21252d;
 }
 
-.card-design-two{
+.card-design-two {
   width: 18rem;
-  background-color: #15181E;
+  background-color: #15181e;
 }
 
-.Featured-Instructors{
-  background-color: #0F0F0F;
+.Featured-Instructors {
+  background-color: #0f0f0f;
   color: #fff;
 }
 
-.Featured-Instructors-Container{
-  background-color: #21252D;
+.Featured-Instructors-Container {
+  background-color: #21252d;
 }
 
-.comments-box{
-  background-color: #21252D;
+.comments-box {
+  background-color: #21252d;
   color: #fff;
 }
 
-.recent-blogs{
-  background-color: #0F0F0F;
+.recent-blogs {
+  background-color: #0f0f0f;
   color: #fff;
 }
 
-.card-design .card-price{
-  color: #F65158;
+.card-design .card-price {
+  color: #f65158;
   font-weight: bold;
 }
 
-.time{
-  border: 2px solid #5193F6;
+.time {
+  border: 2px solid #5193f6;
   border-radius: 5px;
   padding: 12px 12px 12px 12px;
-  background: #5193F6;
+  background: #5193f6;
   font-weight: bold;
 }
 
-.deal-cards{
-  background: #191C23 !important;
+.deal-cards {
+  background: #191c23 !important;
 }
-.deal-cards-button:hover{
-  background: #5193F6;
+.deal-cards-button:hover {
+  background: #5193f6;
   color: #fff;
   border: 0;
 }
 
-.fetured-instructors{
-  background:#21252D;
+.fetured-instructors {
+  background: #21252d;
 }
 
-.st-comments-texts{
-  background: #191C21;
+.st-comments-texts {
+  background: #191c21;
 }
 
-.read-more:hover{
+.read-more:hover {
   color: #fff;
   background: #ffca2c;
 }
 
-.PlaystoreSection{
-  background: #191C23;
+.PlaystoreSection {
+  background: #191c23;
   color: #fff;
 }
 
-.subsciption-section{
-  background: #21252C;
+.subsciption-section {
+  background: #21252c;
   color: #fff;
 }
 
-.faqSection{
+.faqSection {
   color: #fff;
   background: #0f0f0f;
 }
 
-.faqSection .accordion-button{
-  background: #21252D;
+.faqSection .accordion-button {
+  background: #21252d;
   color: #fff;
 }
 
-.faqSection .accordion-body{
-  background: #21252D ;
+.faqSection .accordion-body {
+  background: #21252d;
   color: #fff;
 }
 
-.footerMain{
-  background: #191C21 !important;
+.footerMain {
+  background: #191c21 !important;
   color: #fff;
 }
 
-@media(max-width: 992px) {
-  .comments-box{
+/*Cart page*/
+.cart-main {
+  background: #191C21;
+  color: #fff;
+}
+
+.cart-options{
+  background: #0F0F0F;
+}
+
+@media (max-width: 992px) {
+  .comments-box {
     display: none;
   }
-  .download{
+  .download {
     display: none !important;
   }
 }
