@@ -209,12 +209,10 @@
 /*Cart page*/
 .cart-main {
   background: #191C21;
-  color: #fff;
+  color: #E5E5E5;
 }
-
-.card-products{
-  color: #fff;
-  background:#0F0F0F;
+.cart-items{
+  background-color: #282D37;
 }
 
 @media (max-width: 992px) {

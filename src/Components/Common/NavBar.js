@@ -94,13 +94,11 @@ const NavBar = () => {
             <Nav.Link href="#action2" style={{ color: "white" }}>
               FREE QUIZ
             </Nav.Link>
-            <Nav.Link href="#action2" style={{ color: "white" }}>
-              SUPPORT
+            <Nav.Link>
+              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}>CART</NavLink>
             </Nav.Link>
             <Nav.Link href="#action2" style={{ color: "white" }}>
-              <div className="userData">
-                {currentUser?.email}
-              </div>
+              <div className="userData">{currentUser?.email}</div>
             </Nav.Link>
             <Button variant="warning" onClick={handleOpen}>
               LOG IN
@@ -130,14 +128,22 @@ const NavBar = () => {
                 label="Email address"
                 className="mb-3"
               >
-                <Form.Control type="email" placeholder="name@example.com" ref={emailRef}/>
+                <Form.Control
+                  type="email"
+                  placeholder="name@example.com"
+                  ref={emailRef}
+                />
               </FloatingLabel>
               <FloatingLabel
                 controlId="floatingPassword"
                 label="Password"
                 className="mb-3"
               >
-                <Form.Control type="password" placeholder="Password" ref={passwordRef} />
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  ref={passwordRef}
+                />
               </FloatingLabel>
               <Button className="w-100" id="LoginButton" onClick={handleLogin}>
                 Log In
@@ -155,7 +161,8 @@ const NavBar = () => {
                 </h6>
                 <br />
                 <span className="text-decoration-underline">
-                  Forgot your password? or <span onClick={handleLogout}>Logout</span>
+                  Forgot your password? or{" "}
+                  <span onClick={handleLogout}>Logout</span>
                 </span>
                 <br />
                 <span>By logging in, you agree to our</span>
