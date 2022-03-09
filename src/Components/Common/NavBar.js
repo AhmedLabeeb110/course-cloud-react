@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Navbar,
   Nav,
@@ -15,12 +15,27 @@ import { NavLink } from "react-router-dom";
 import logo from "../../Assets/logo.png";
 import GoogleIcon from "../../Assets/GoogleIcon.png";
 import fbIcon from "../../Assets/fbIcon.png";
+import { BsCartCheck } from "react-icons/bs";
 
 import { signUp, login, useAuth, logout } from "../../FirebaseAuth/Firebase";
 
-const NavBar = () => {
+import { connect } from "react-redux";
+
+
+const NavBar = ({cart}) => {
   const [showLogin, setLogin] = useState(false);
   const [changeLogin, setchangeLogin] = useState(false);
+
+  const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    let count = 0;
+    cart.forEach((item) => {
+      count += item.qty;
+    });
+
+    setCartCount(count);
+  }, [cart, cartCount]);
 
   const handleClose = () => {
     setLogin(false);
@@ -96,6 +111,12 @@ const NavBar = () => {
             </Nav.Link>
             <Nav.Link>
               <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}>CART</NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}><BsCartCheck/></NavLink>
+            </Nav.Link>
+            <Nav.Link>
+              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}>{cartCount}</NavLink>
             </Nav.Link>
             <Nav.Link href="#action2" style={{ color: "white" }}>
               <div className="userData">{currentUser?.email}</div>
@@ -255,4 +276,10 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+const mapStateToProps = (state) => {
+  return {
+    cart: state.shop.cart,
+  };
+};
+
+export default connect(mapStateToProps)(NavBar);
