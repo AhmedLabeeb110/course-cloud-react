@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { Container } from "react-bootstrap";
 
 import { connect } from "react-redux";
+import { removeFromCart } from "../../redux/Shopping/shopping-actions";
 
-const Cart = ({cart}) => {
+const Cart = ({cart,removeFromCart}) => {
   // const [courses, setCourses] = useState([]);
   // useEffect(() => {
   //   fetch("db.json")
@@ -29,6 +30,10 @@ const Cart = ({cart}) => {
     setTotalPrice(price);
   }, [cart, totalPrice, totalItems, setTotalPrice, setTotalItems]);
 
+  // const removeItem = (id)=> {
+  //   const filterCart = cart.filter(item=> item.id!==id);
+  // }
+
   return (
   <div className="cart-main">
       <Container className="p-5">
@@ -40,7 +45,8 @@ const Cart = ({cart}) => {
             <img src="" alt="" />
             <p>{item.title}</p>
             <input value={item.qty} />
-          </div>
+            </div>
+            <p className="text-white" onClick={()=>removeFromCart(item.id)}>Remove</p>
         </div>))}
 
         <div className="sub-total">
@@ -55,7 +61,13 @@ const Cart = ({cart}) => {
 const mapStateToProps = (state) => {
   return {
     cart: state.shop.cart,
+  
   };
 };
+const mapDispatchToProps = (dispatch)=>{
+  return{
+  removeFromCart: (id)=> dispatch(removeFromCart(id))
+  }
+}
 
-export default connect(mapStateToProps)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
