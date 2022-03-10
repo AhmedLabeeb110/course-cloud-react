@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, ToastContainer, Toast } from "react-bootstrap";
 
 import { connect } from "react-redux";
 import { removeFromCart } from "../../redux/Shopping/shopping-actions";
@@ -42,16 +42,17 @@ const Cart = ({cart,removeFromCart}) => {
         {cart.map((item) => (
         <div className="cart-itens" key={item.id}>
           <div className="added-items border border-1 w-50">
-            <img src="" alt="" />
+            <img src={item.img} alt="" />
             <p>{item.title}</p>
-            <input value={item.qty} />
+            <p>£ {item.price}</p>
+            <p>{item.level}</p>
+            <input value={item.qty} style={{color: "white", background: "#191C21"}}/>
             </div>
             <p className="text-white" onClick={()=>removeFromCart(item.id)}>Remove</p>
         </div>))}
-
         <div className="sub-total">
-          <h6>Total: ({totalItems})</h6>
-          <h6>Total: ({totalPrice})</h6>
+          <h6>Total Items: {totalItems}</h6>
+          <h6>Total Price: £ {totalPrice}</h6>
         </div>
       </Container>
     </div>

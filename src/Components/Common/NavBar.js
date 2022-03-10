@@ -21,8 +21,7 @@ import { signUp, login, useAuth, logout } from "../../FirebaseAuth/Firebase";
 
 import { connect } from "react-redux";
 
-
-const NavBar = ({cart}) => {
+const NavBar = ({ cart }) => {
   const [showLogin, setLogin] = useState(false);
   const [changeLogin, setchangeLogin] = useState(false);
 
@@ -103,20 +102,40 @@ const NavBar = ({cart}) => {
             />
           </Form>
           <Nav className="ms-auto my-2 my-lg-0 p-2" navbarScroll>
-            <Nav.Link href="#action1" style={{ color: "white" }}>
-              HOME
+            <Nav.Link href="#action1">
+              <NavLink
+                to="/"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                HOME
+              </NavLink>
             </Nav.Link>
             <Nav.Link href="#action2" style={{ color: "white" }}>
               FREE QUIZ
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}>CART</NavLink>
+              <NavLink
+                to="/Cart"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                CART
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}><BsCartCheck/></NavLink>
+              <NavLink
+                to="/Cart"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <BsCartCheck />
+              </NavLink>
             </Nav.Link>
             <Nav.Link>
-              <NavLink to="/Cart" style={{ color: "white", textDecoration: "none" }}>{cartCount}</NavLink>
+              <NavLink
+                to="/Cart"
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                {cartCount}
+              </NavLink>
             </Nav.Link>
             <Nav.Link href="#action2" style={{ color: "white" }}>
               <div className="userData">{currentUser?.email}</div>
